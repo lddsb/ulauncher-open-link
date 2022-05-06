@@ -37,7 +37,7 @@ class ItemEnterEventListener(EventListener):
     def on_event(self, event, extension):
         query = event.get_data() or str()
 
-        webbrowser.open_new_tab(query)
+        webbrowser.open(query)
         
         return RenderResultListAction([])
 
