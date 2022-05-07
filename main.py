@@ -39,7 +39,7 @@ class ItemEnterEventListener(EventListener):
         if 'http' not in query:
             query = 'http://' + query
         
-        webbrowser.open(query)
+        webbrowser.open_new_tab(query)
         
         return RenderResultListAction([])
 
